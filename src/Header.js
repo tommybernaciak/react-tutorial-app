@@ -8,11 +8,12 @@ class Header extends Component {
             <div className="row">
               <a onClick={this.props.showAbout} className="btn btn-primary my-2">About</a>
               <a onClick={this.props.showCards} className="btn btn-primary my-2">Cards</a>
-              <a onClick={this.props.showGithub} className="btn btn-primary my-2">Github viewer</a>
+              <a onClick={this.props.showGithub} className="btn btn-primary my-2">Github</a>
+              <a onClick={this.props.showQuiz} className="btn btn-primary my-2">Quiz</a>
             </div>
           </div>
         </div>
-        <div className="navbar navbar-dark bg-dark box-shadow">
+        <div className="navbar navbar-light box-shadow">
           <div className="container d-flex justify-content-between">
             <a className="navbar-brand d-flex align-items-center">
               <strong>{this.props.title}</strong>

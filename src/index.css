@@ -3,3 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.border-top {
+  border-top: 1px solid #e3e3e3;
+}

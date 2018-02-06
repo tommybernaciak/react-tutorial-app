@@ -13,6 +13,7 @@ class App extends Component {
     this.handleShowAbout = this.handleShowAbout.bind(this);
     this.handleShowCards = this.handleShowCards.bind(this);
     this.handleShowGithub = this.handleShowGithub.bind(this);
+    this.handleShowQuiz = this.handleShowQuiz.bind(this);
   }
 
   handleShowAbout() {
@@ -23,6 +24,9 @@ class App extends Component {
   }
   handleShowGithub() {
     this.setState({page: 'github'})
+  }
+  handleShowQuiz() {
+    this.setState({page: 'quiz'})
   }
 
   render() {
@@ -36,7 +40,8 @@ class App extends Component {
           title="React Tutorial"
           showAbout={this.handleShowAbout}
           showCards={this.handleShowCards}
-          showGithub={this.handleShowGithub}/>
+          showGithub={this.handleShowGithub}
+          showQuiz={this.handleShowQuiz}/>
         <Main
           page={this.state.page}/>
         <Footer />

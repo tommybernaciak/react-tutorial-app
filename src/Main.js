@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Jumbotron from './Jumbotron';
-import CardContainer from './CardContainer';
-import Github from './Github';
+import CardContainer from './cards/CardContainer';
+import Github from './github/Github';
+import Quiz from './quiz/Quiz';
 
 class Main extends Component {
   render() {
@@ -14,6 +15,9 @@ class Main extends Component {
     }
     if (this.props.page === 'github') {
       content = <Github />
+    }
+    if (this.props.page === 'quiz') {
+      content = <Quiz />
     }
 
     return (
