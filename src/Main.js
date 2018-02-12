@@ -3,6 +3,7 @@ import Jumbotron from './Jumbotron';
 import CardContainer from './cards/CardContainer';
 import Github from './github/Github';
 import Quiz from './quiz/Quiz';
+import Movies from './movies/components/Movies';
 
 class Main extends Component {
   render() {
@@ -18,6 +19,9 @@ class Main extends Component {
     }
     if (this.props.page === 'quiz') {
       content = <Quiz />
+    }
+    if (this.props.page === 'movies') {
+      content = <Movies />
     }
 
     return (

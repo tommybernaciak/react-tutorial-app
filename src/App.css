@@ -30,3 +30,7 @@
 .btn {
   color: white !important;
 }
+
+.hidden {
+  visibility: hidden;
+}

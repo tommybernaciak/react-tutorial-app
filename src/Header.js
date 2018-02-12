@@ -10,6 +10,7 @@ class Header extends Component {
               <a onClick={this.props.showCards} className="btn btn-primary my-2">Cards</a>
               <a onClick={this.props.showGithub} className="btn btn-primary my-2">Github</a>
               <a onClick={this.props.showQuiz} className="btn btn-primary my-2">Quiz</a>
+              <a onClick={this.props.showMovies} className="btn btn-primary my-2">Movies</a>
             </div>
           </div>
         </div>

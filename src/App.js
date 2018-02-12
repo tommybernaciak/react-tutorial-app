@@ -14,6 +14,7 @@ class App extends Component {
     this.handleShowCards = this.handleShowCards.bind(this);
     this.handleShowGithub = this.handleShowGithub.bind(this);
     this.handleShowQuiz = this.handleShowQuiz.bind(this);
+    this.handleShowMovies = this.handleShowMovies.bind(this);
   }
 
   handleShowAbout() {
@@ -28,6 +29,9 @@ class App extends Component {
   handleShowQuiz() {
     this.setState({page: 'quiz'})
   }
+  handleShowMovies() {
+    this.setState({page: 'movies'})
+  }
 
   render() {
     return (
@@ -41,7 +45,8 @@ class App extends Component {
           showAbout={this.handleShowAbout}
           showCards={this.handleShowCards}
           showGithub={this.handleShowGithub}
-          showQuiz={this.handleShowQuiz}/>
+          showQuiz={this.handleShowQuiz}
+          showMovies={this.handleShowMovies}/>
         <Main
           page={this.state.page}/>
         <Footer />
