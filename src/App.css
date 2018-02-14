@@ -34,3 +34,7 @@
 .hidden {
   visibility: hidden;
 }
+
+.pull-down {
+  margin-top: 10px;
+}

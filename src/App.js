@@ -8,7 +8,7 @@ import Footer from './Footer';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {page: 'about'};
+    this.state = {page: 'movies'};
 
     this.handleShowAbout = this.handleShowAbout.bind(this);
     this.handleShowCards = this.handleShowCards.bind(this);
